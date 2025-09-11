@@ -9,7 +9,7 @@ from .model import ModelePuissance4
 # Import de la vue GUI de manière optionnelle pour éviter
 # les erreurs en environnement CI/serveur sans Tkinter.
 try:
-    from .view import VueTk  # type: ignore
+    from .view import VueTk  # type: ignore  # noqa: F401
 except Exception:
     # L'import échoue si Tkinter n'est pas disponible; ce n'est pas bloquant
     # pour l'utilisation du modèle/contrôleur ni pour les tests.

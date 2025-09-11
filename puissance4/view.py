@@ -14,7 +14,6 @@ class VueTk:
         self.pad = padding
 
         width = cols * self.cell + 2 * self.pad
-        height = rows * self.cell + 2 * self.pad + 60
 
         self.root = tk.Tk()
         self.root.title("Puissance 4 — MVC")
