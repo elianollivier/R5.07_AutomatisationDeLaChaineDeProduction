@@ -4,6 +4,6 @@ __all__ = [
     "VueTk",
 ]
 
-from .model import ModelePuissance4
 from .controller import ControleurJeu
+from .model import ModelePuissance4
 from .view import VueTk

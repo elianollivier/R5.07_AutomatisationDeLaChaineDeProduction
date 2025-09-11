@@ -1,6 +1,6 @@
 import pytest
 
-from puissance4.model import ModelePuissance4, CoupInvalide
+from puissance4.model import CoupInvalide, ModelePuissance4
 
 
 def test_etat_initial():

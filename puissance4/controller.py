@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional
-
-from .model import ModelePuissance4, CoupInvalide
+from .model import CoupInvalide, ModelePuissance4
 
 
 class ControleurJeu:

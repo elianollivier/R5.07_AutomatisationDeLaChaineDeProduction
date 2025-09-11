@@ -1,5 +1,5 @@
-from puissance4.model import ModelePuissance4
 from puissance4.controller import ControleurJeu
+from puissance4.model import ModelePuissance4
 from puissance4.view import VueTk
 
 
