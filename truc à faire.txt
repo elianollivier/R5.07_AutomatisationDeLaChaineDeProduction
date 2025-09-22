@@ -1,0 +1,3 @@
+revenir sur une ancienne version pour voir ce que dit le linter
+mettre le linter et le coverage sur la chaine ci / cd? pas trop compris
+trouver un autre truc à explorer (ex: essayer le ci/cd avec différente version de python?)

@@ -1,6 +1,6 @@
 name: CI
 
-on:
+on: #pour savoir quand le lancer
   push:
   pull_request:
 
@@ -12,9 +12,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install, lint, test
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          ruff check .
-          python -m pytest -q
+      - name: Lint
+        run: ruff check .
+      - name: Test with coverage
+        run: python -m pytest --cov=puissance4 --cov-report=term-missing
